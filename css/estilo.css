@@ -330,8 +330,7 @@ body {
     color: white;
   }
   .encabezado {
-    max-width: 414px;
-    height: auto;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,6 +414,9 @@ body {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "hab1" "hab2" "hab3" "hab4" "hab5" "hab6";
     gap: 0.8rem;
+  }
+  .habitaciones {
+    max-width: 100%;
   }
   .habitaciones.hab1 {
     -ms-grid-row: 1;
