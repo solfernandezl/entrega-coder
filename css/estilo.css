@@ -1,0 +1,669 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Unna', serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*index + nav y footer*/
+#menu {
+  background-color: #31a3c0;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Unna', serif;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#menu :hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.nav-item-tel {
+  text-decoration: none;
+}
+
+.carousel {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer {
+  background-color: #31a3c0;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Unna', serif;
+}
+
+.textfot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 18px;
+  color: white;
+}
+
+.descripcion {
+  background-color: #31a3c0;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.desc-text {
+  padding: 30px;
+}
+
+.desc-text-1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.desc-text-2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Unna', serif;
+}
+
+.text-extra {
+  background-color: goldenrod;
+  font-size: 30px;
+}
+
+.map-extra {
+  width: 16rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*habitaciones*/
+.habs {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "hab1 hab2" "hab3 hab4" "hab5 hab6";
+  gap: 10px;
+}
+
+.habitaciones {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.habitaciones.hab1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hab1;
+}
+
+.habitaciones.hab2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hab2;
+}
+
+.habitaciones.hab3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hab3;
+}
+
+.habitaciones.hab4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: hab4;
+}
+
+.habitaciones.hab5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: hab5;
+}
+
+.habitaciones.hab6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: hab6;
+}
+
+.habitaciones:hover {
+  opacity: 30%;
+  color: goldenrod;
+}
+
+/*Promos*/
+.promos {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "promo1 promo2";
+  gap: 10px;
+}
+
+.promo1 {
+  border: solid 3px goldenrod;
+  font-size: 40px;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: promo1;
+}
+
+.promo2 {
+  border: solid 3px goldenrod;
+  font-size: 40px;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: promo2;
+}
+
+.promo1:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.promo2:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.textpromo {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Contacto*/
+.contacto {
+  display: -ms-grid;
+  display: grid;
+  margin: 20px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "formulario maps";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: formulario;
+}
+
+.form {
+  margin: 10px;
+}
+
+.textform {
+  font-size: 20px;
+}
+
+.mapa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: maps;
+  width: 400px;
+}
+
+.direc {
+  text-align: center;
+}
+
+.formulario {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 550px;
+  height: 500px;
+  border: solid goldenrod;
+  padding: 20px;
+  text-align: left;
+  text-align: center;
+}
+
+.mapa {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.googlemaps {
+  width: 500px;
+  height: 400px;
+}
+
+.direc {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*mediaq*/
+@media screen and (max-width: 414px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  #menu {
+    background-color: #f16f76;
+    color: black;
+  }
+  #footer {
+    background-color: #f16f76;
+    color: black;
+  }
+  .descripcion {
+    background-color: goldenrod;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  .desc-text-1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .desc-text-2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .text-extra {
+    color: black;
+    background-color: #31a3c0;
+    font-size: 20px;
+  }
+  .card-text {
+    color: #f16f76;
+  }
+  /*Promos*/
+  .promos {
+    display: -ms-grid;
+    display: grid;
+    gap: 0.8rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "promo1" "promo2";
+    gap: 10px;
+    margin: auto;
+  }
+  .promo1 {
+    border: solid 3px goldenrod;
+    font-size: 30px;
+    text-align: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: promo1;
+  }
+  .promo2 {
+    border: solid 2px goldenrod;
+    font-size: 30px;
+    text-align: center;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: promo2;
+  }
+  .promo1:hover {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  /*habitaciones*/
+  .habs {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "hab1" "hab2" "hab3" "hab4" "hab5" "hab6";
+    gap: 0.8rem;
+  }
+  .habitaciones.hab1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hab1;
+  }
+  .habitaciones.hab2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: hab2;
+  }
+  .habitaciones.hab3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: hab3;
+  }
+  .habitaciones.hab4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: hab4;
+  }
+  .habitaciones.hab5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: hab5;
+  }
+  .habitaciones.hab6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: hab6;
+  }
+  .habitaciones:hover {
+    opacity: 30%;
+    border: 2px goldenrod;
+    text-decoration: underline;
+  }
+  /*Contacto*/
+  .contacto {
+    display: -ms-grid;
+    display: grid;
+    margin: 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "formulario" "maps";
+  }
+  .textform {
+    color: white;
+  }
+  .form {
+    color: white;
+  }
+  .formulario {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: formulario;
+    margin: auto;
+  }
+  .mapa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: maps;
+  }
+  .direc {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  #menu {
+    background-color: #f16f76;
+    color: black;
+  }
+  #footer {
+    background-color: #f16f76;
+    color: black;
+  }
+  .descripcion {
+    background-color: goldenrod;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  .desc-text-1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .desc-text-2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .text-extra {
+    color: black;
+    background-color: #31a3c0;
+    font-size: 20px;
+  }
+  .card-text {
+    color: #f16f76;
+  }
+  .map-extra {
+    width: 10rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "horario" "pernocte" "mapa";
+  }
+  .card-horario {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: horario;
+  }
+  .card-pernocte {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: pernocte;
+  }
+  .card-mapa {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: mapa;
+  }
+  /*Promos*/
+  .promos {
+    display: -ms-grid;
+    display: grid;
+    gap: 0.8rem;
+    margin: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "promo1" "promo2";
+  }
+  .promo1 {
+    border: solid 3px #31a3c0;
+    font-size: 30px;
+    text-align: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: promo1;
+    color: #f16f76;
+  }
+  .promo2 {
+    border: solid 2px #31a3c0;
+    font-size: 30px;
+    text-align: center;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: promo2;
+    color: #f16f76;
+  }
+  .promo1:hover {
+    background-color: white;
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  .promo2:hover {
+    background-color: white;
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  /*Habitaciones*/
+  .habs {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "hab1" "hab2" "hab3"  "hab4" "hab5"  "hab6";
+    gap: 0.8rem;
+  }
+  .habitaciones.hab1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hab1;
+    border: 2px #f16f76;
+  }
+  .habitaciones.hab2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: hab2;
+    border: 2px #f16f76;
+  }
+  .habitaciones.hab3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: hab3;
+    border: 2px #f16f76;
+  }
+  .habitaciones.hab4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: hab4;
+    border: 2px #f16f76;
+  }
+  .habitaciones.hab5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: hab5;
+    border: 2px #f16f76;
+  }
+  .habitaciones.hab6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: hab6;
+    border: 2px #f16f76;
+  }
+  .habitaciones:hover {
+    opacity: 30%;
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  /*Contacto*/
+  .contacto {
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    margin: 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "formulario" "maps";
+  }
+  .textform {
+    color: white;
+  }
+  .form {
+    color: white;
+  }
+  .formulario {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: formulario;
+    color: black;
+  }
+  .mapa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: maps;
+    width: 200px;
+  }
+  .direc {
+    text-align: center;
+    color: #f16f76;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,536 @@
+
+$colornav: rgb(49, 163, 192);
+$colortext-1: black;
+$colortext-2: white;
+$color-detalles: goldenrod;
+$colornavmedia:rgb(241, 111, 118);
+$colorbg: black;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Unna', serif;
+    background-color: rgb(247, 247, 247);
+}
+header{
+    display: flex;
+    align-items: center;
+}
+/*index + nav y footer*/
+
+#menu{
+    background-color: $colornav;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Unna', serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#menu :hover{
+    text-decoration-line: underline;
+}
+.nav-item-tel{
+    text-decoration: none;
+}
+.carousel{
+    margin: auto;
+    justify-content: center;
+}
+#footer{
+    background-color: $colornav;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Unna', serif;
+}
+.textfot{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: $colortext-2;
+}
+.descripcion{
+    background-color: $colornav;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+}
+.desc-text{
+    padding: 30px;
+}
+.desc-text-1{
+    text-align: center;
+    font-size: 30px;
+}
+.desc-text-2{
+    text-align: center;
+    font-size: 20px;
+}
+.extra{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Unna', serif;
+}
+.text-extra{
+    background-color: $color-detalles ;
+    font-size: 30px;
+}
+.map-extra{
+    width: 16rem;
+    align-items: center;
+}
+
+/*habitaciones*/
+
+.habs{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "hab1 hab2"
+    "hab3 hab4"
+    "hab5 hab6";
+    gap: 10px; 
+}
+.habitaciones{
+    align-items: center;
+    margin-top: 15px;
+}
+.habitaciones.hab1{
+    grid-area: hab1;
+}
+.habitaciones.hab2{
+    grid-area: hab2;
+}
+.habitaciones.hab3{
+    grid-area: hab3;
+}
+.habitaciones.hab4{
+    grid-area: hab4;
+}
+.habitaciones.hab5{
+    grid-area: hab5;
+}
+.habitaciones.hab6{
+    grid-area: hab6;
+}
+.habitaciones:hover{
+    opacity: 30%;
+    color: goldenrod;
+}
+
+/*Promos*/
+.promos{
+    width: 90%;
+    height: 200px;
+    margin: auto;  
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "promo1 promo2";
+    gap: 10px; 
+}
+.promo1{
+    border: solid 3px goldenrod;
+    font-size: 40px;
+    text-align: center;
+    grid-area: promo1;
+}
+.promo2{
+    border: solid 3px goldenrod;
+    font-size: 40px;
+    text-align: center;
+    grid-area: promo2;
+}
+.promo1:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.promo2:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.textpromo{
+    animation-duration: 15s;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+
+/*Contacto*/
+.contacto{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "formulario maps";
+    align-items: center;
+}
+.formulario{
+    grid-area: formulario;
+}
+.form{
+    margin: 10px;
+}
+.textform{
+    font-size: 20px;
+}
+.mapa{
+    grid-area: maps;
+    width: 400px;
+}
+.direc{
+    text-align: center;
+}
+.formulario{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 550px;
+    height: 500px;
+    border: solid goldenrod;
+    padding: 20px;
+    text-align: left;
+    text-align: center;
+}
+.mapa{
+    padding-left: 20px;
+    display: inline-block;
+}
+.googlemaps{
+    width: 500px;
+    height: 400px;
+}
+.direc{
+    margin: auto;
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*mediaq*/
+
+@media screen and (max-width:414px){
+    body{
+        background-color: $colorbg;
+        color: white;
+    }
+    #menu{
+        background-color: $colornavmedia;
+        color: $colorbg;
+    }
+    #footer{
+        background-color: $colornavmedia;
+        color: $colorbg;
+    }
+    .descripcion{
+        background-color: $color-detalles;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .desc-text-1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .desc-text-2{
+        text-align: center;
+        font-size: 10px;
+    }
+    .text-extra{
+        color: black;
+        background-color: $colornav  ;
+        font-size: 20px;
+    }
+    .card-text{
+        color: $colornavmedia;
+    }
+
+    /*Promos*/
+    .promos{ 
+        display: grid;
+        gap: 0.8rem;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "promo1"
+        "promo2";
+        gap: 10px; 
+        margin: auto;
+    }
+    .promo1{
+        border: solid 3px $color-detalles;
+        font-size: 30px;
+        text-align: center;
+        grid-area: promo1;
+    }
+    .promo2{
+        border: solid 2px $color-detalles;
+        font-size: 30px;
+        text-align: center;
+        grid-area: promo2;
+    }
+    .promo1:hover{
+        color: $color-detalles;
+        text-decoration: underline;
+    }
+    /*habitaciones*/
+
+    .habs{
+        width: 90%; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "hab1"
+        "hab2"
+        "hab3"
+        "hab4"
+        "hab5"
+        "hab6";
+        gap: 0.8rem; 
+    }
+    .habitaciones.hab1{
+        grid-area: hab1;
+    }
+    .habitaciones.hab2{
+        grid-area: hab2;
+    }
+    .habitaciones.hab3{
+        grid-area: hab3;
+    }
+    .habitaciones.hab4{
+        grid-area: hab4;
+    }
+    .habitaciones.hab5{
+        grid-area: hab5;
+    }
+    .habitaciones.hab6{
+        grid-area: hab6;
+    }
+    .habitaciones:hover{
+        opacity: 30%;
+        border: 2px $color-detalles;
+        text-decoration: underline;
+    }
+    /*Contacto*/
+    .contacto{
+        display: grid;
+        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "formulario"
+        "maps";
+    }
+    .textform{
+        color: white;
+    }
+    .form{
+        color: white;
+    }
+    .formulario{
+        grid-area: formulario;
+        margin: auto;
+    }
+    .mapa{
+        grid-area: maps;
+    }
+    .direc{
+        text-align: center;
+    }
+}    
+@media screen and (max-width:1024px){
+    body{
+        background-color: $colorbg;
+        color: white;
+    }
+    #menu{
+        background-color: $colornavmedia;
+        color: $colorbg;
+    }
+    #footer{
+        background-color: $colornavmedia;
+        color: $colorbg;
+    }
+    .descripcion{
+        background-color: $color-detalles;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .desc-text-1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .desc-text-2{
+        text-align: center;
+        font-size: 18px;
+    }
+    .text-extra{
+        color: black;
+        background-color: $colornav  ;
+        font-size: 20px;
+    }
+    .card-text{
+        color: $colornavmedia;
+    }
+    .map-extra{
+        width: 10rem;
+        align-items: center;
+    }
+    .card{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "horario"
+        "pernocte"
+        "mapa";
+    }
+    .card-horario{
+        grid-area: horario;
+    }
+    .card-pernocte{
+        grid-area: pernocte;
+    }
+    .card-mapa{
+        grid-area: mapa;
+    }
+
+    /*Promos*/
+    .promos{ 
+        display: grid;
+        gap: 0.8rem;
+        margin: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "promo1"
+        "promo2";
+    }
+    .promo1{
+        border: solid 3px $colornav;
+        font-size: 30px;
+        text-align: center;
+        grid-area: promo1;
+        color:$colornavmedia;
+    }
+    .promo2{
+        border: solid 2px $colornav;
+        font-size: 30px;
+        text-align: center;
+        grid-area: promo2;
+        color:$colornavmedia;
+    }
+    .promo1:hover{
+        background-color: white;
+        color: $color-detalles;
+        text-decoration: underline;
+    }
+    .promo2:hover{
+        background-color: white;
+        color: $color-detalles;
+        text-decoration: underline;
+    }
+    /*Habitaciones*/
+    .habs{
+        width: 90%; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "hab1"
+        "hab2"
+        "hab3" 
+        "hab4"
+        "hab5" 
+        "hab6";
+        gap: 0.8rem; 
+    }
+    .habitaciones.hab1{
+        grid-area: hab1;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones.hab2{
+        grid-area: hab2;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones.hab3{
+        grid-area: hab3;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones.hab4{
+        grid-area: hab4;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones.hab5{
+        grid-area: hab5;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones.hab6{
+        grid-area: hab6;
+        border: 2px $colornavmedia;
+    }
+    .habitaciones:hover{
+        opacity: 30%;
+        color: goldenrod;
+        text-decoration: underline;
+    }
+
+    /*Contacto*/
+    .contacto{
+        color: white;
+        display: grid;
+        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "formulario"
+        "maps";
+    }
+    .textform{
+        color: white;
+    }
+    .form{
+        color: white;
+    }
+    .formulario{
+        grid-area: formulario;
+        color: $colorbg;
+    }
+    .mapa{
+        grid-area: maps;
+        width: 200px;
+    }
+    .direc{
+        text-align: center;
+        color: $colornavmedia;
+    }
+}    
