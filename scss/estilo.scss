@@ -16,7 +16,8 @@ body{
     font-family: 'Unna', serif;
     background-color: rgb(247, 247, 247);
 }
-header{
+.encabezado{
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -240,6 +241,11 @@ header{
         background-color: $colorbg;
         color: white;
     }
+    .encabezado{
+        width: 414px;
+        display: flex;
+        align-items: center;
+    }
     #menu{
         background-color: $colornavmedia;
         color: $colorbg;
@@ -369,6 +375,11 @@ header{
     body{
         background-color: $colorbg;
         color: white;
+    }
+    .encabezado{
+        width: 1024px;
+        display: flex;
+        align-items: center;
     }
     #menu{
         background-color: $colornavmedia;
